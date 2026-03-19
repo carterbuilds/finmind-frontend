@@ -578,10 +578,12 @@ body{height:100%;background:var(--bg);color:var(--text);font-family:'DM Sans',sa
 </div>
 
 <script>
+  window.FINMIND_API_URL = 'finmind-backend-production.up.railway.app';
+</script>
 /* ══════════════════════════════════════════════════════
    API CLIENT (inline — same as api.js)
 ══════════════════════════════════════════════════════ */
-const API_BASE = window.FINMIND_API_URL || 'http://localhost:3001/api';
+const API_BASE = window.FINMIND_API_URL || 'finmind-backend-production.up.railway.app';
 const USD_TO_IDR = 16200;
 
 const Token = {
